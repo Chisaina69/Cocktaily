@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = React.useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -10,12 +11,22 @@ function Navbar() {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black">
-      <h1 className="w-full text-3xl font-bold text-[#dc143c] ">Cocktaily</h1>
+      <Link to="/" className="w-full text-3xl font-bold text-[#dc143c]">
+        Cocktaily
+      </Link>
       <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
-        <li className="p-4">Recepies</li>
-        <li className="p-4"> About</li>
-        <li className="p-4">Contact</li>
+        <li className="p-4">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="p-4">
+          <Link to="/cocktails">Cocktails</Link>
+        </li>
+        <li className="p-4">
+          <Link to="/about">About</Link>
+        </li>
+        <li className="p-4">
+          <Link to="/contact">Contact</Link>
+        </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -24,18 +35,26 @@ function Navbar() {
       <div
         className={
           !nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-600 bg-[#faebd7] ease-in-out duration-500"
-            : "fixed left-[-100%]"
+            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-600 bg-[#faebd7] ease-in-out duration-500'
+            : 'fixed left-[-100%]'
         }
       >
-        <h1 className="w-full text-3xl font-bold text-[#dc143c] m-4">
+        <Link to="/" className="w-full text-3xl font-bold text-[#dc143c] m-4">
           Cocktaily
-        </h1>
+        </Link>
         <ul className="uppercase p-4">
-          <li className="p-4 border-b">Home</li>
-          <li className="p-4 border-b">Recepies</li>
-          <li className="p-4 border-b"> About</li>
-          <li className="p-4">Contact</li>
+          <li className="p-4 border-b">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="p-4 border-b">
+            <Link to="/cocktails">Cocktails</Link>
+          </li>
+          <li className="p-4 border-b">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
     </div>
@@ -43,3 +62,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
