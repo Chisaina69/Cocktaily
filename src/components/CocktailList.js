@@ -19,18 +19,25 @@ const CocktailList = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Cocktails List</h1>
-      {cocktails.map(cocktail => (
-        <div key={cocktail.idDrink}>
-          <Link to={`/cocktails/${cocktail.idDrink}`}>
-            <h3>{cocktail.strDrink}</h3>
-          </Link>
-          <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} style={{ width: '150px' }} />
-        </div>
-      ))}
+    <div className="container mx-auto mt-8">
+      <h1 className="text-4xl font-bold mb-4">Cocktails</h1>
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {cocktails.map((cocktail) => (
+          <div key={cocktail.idDrink} className="shadow-md p-4">
+            <Link to={`/cocktails/${cocktail.idDrink}`}>
+              <h3 className="text-xl font-semibold mb-2 text-blue-600 hover:underline">{cocktail.strDrink}</h3>
+              <img
+                src={cocktail.strDrinkThumb}
+                alt={cocktail.strDrink}
+                className="w-full h-40 object-cover rounded-md"
+              />
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default CocktailList;
+
