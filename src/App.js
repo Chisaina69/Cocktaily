@@ -6,6 +6,7 @@ import CocktailList from "./components/CocktailList";
 import CocktailDetail from "./components/CocktailDetail";
 import About from "./components/About";
 import Contact from "./components/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
