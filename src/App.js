@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import CocktailList from "./components/CocktailList";
 import CocktailDetail from "./components/CocktailDetail";
 import About from "./components/About";
+import Contact from "./components/Contacts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/cocktails" element={<CocktailList />} />
         <Route path="/cocktails/:id" element={<CocktailDetail />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </div>
   );
