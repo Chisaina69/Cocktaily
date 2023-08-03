@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       className="bg-cover bg-center min-h-screen"
-      style={{ backgroundImage: "url(/Back.jpg)" }}
+      style={{ backgroundImage: "url(/back.jpg)" }}
     >
       <div className="max-w-[1240px] mx-auto px-4 py-8 text-white">
         <h1 className="text-4xl font-bold mb-4">
