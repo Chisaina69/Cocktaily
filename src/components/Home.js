@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TopRecommendedDrinks from "./ TopRecommendedDrinks";
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
         >
           Go to Cocktails
         </Link>
+      </div>
+      <div>
+        <TopRecommendedDrinks/>
       </div>
     </div>
   );

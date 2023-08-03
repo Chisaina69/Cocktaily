@@ -40,6 +40,7 @@ const CocktailDetail = () => {
             <li key={key}>{cocktail[key]}</li>
           ))}
       </ul>
+      <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} className="mt-8 rounded-md" style={{ width: '200px' }} />
     </div>
   );
 };
