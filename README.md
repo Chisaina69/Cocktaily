@@ -23,11 +23,11 @@ To use Cocktaily, simply follow these steps:
 
 ## Contributing
 
-We welcome contributions from the mixology community! If you have a unique cocktail recipe to share or if you spot an error or improvement in our content, feel free to open a pull request, and we'll review it.
+I welcome contributions from the mixology community! If you have a unique cocktail recipe to share or if you spot an error or improvement in our content, feel free to open a pull request, and we'll review it.
 
 ## Feedback
 
-We value your feedback! If you have any suggestions, questions, or issues with Cocktaily, please don't hesitate to reach out to us. You can contact us through our contact form or by emailing us at [muyekwe11@gmail.com](mailto:contact@gmail.com).
+I value your feedback! If you have any suggestions, questions, or issues with Cocktaily, please don't hesitate to reach out to us. You can contact us through our contact form or by emailing us at [muyekwe11@gmail.com](mailto:contact@gmail.com).
 
 ## License
 
@@ -35,6 +35,6 @@ Cocktaily is an open-source project licensed under the [MIT License](LICENSE). F
 
 ## Acknowledgements
 
-We extend our gratitude to the [CocktailDB API](https://www.thecocktaildb.com/) for providing us with access to a vast collection of cocktail data, making it possible to bring Cocktaily to life.
+I extend our gratitude to the [CocktailDB API](https://www.thecocktaildb.com/) for providing us with access to a vast collection of cocktail data, making it possible to bring Cocktaily to life.
 
 Thank you for using Cocktaily, and cheers to exploring the art of mixology!
