@@ -4,7 +4,7 @@ import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className=" bottom-0 mb-4 bg-black py-4 text-white text-center">
+    <footer className=" bottom-0 mb-4 bg-[#faebd7] py-4 text-black text-center">
       <div className="flex justify-center mb-4">
         <a
           href="https://twitter.com/muyekwe_quincy"

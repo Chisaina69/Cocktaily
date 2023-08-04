@@ -44,7 +44,7 @@ const CocktailList = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {cocktails.map(cocktail => (
-            <div key={cocktail.idDrink} className="bg-white shadow-md p-4 rounded-lg">
+            <div key={cocktail.idDrink} className="bg-[#faebd7] shadow-md p-4 rounded-lg">
               <Link to={`/cocktails/${cocktail.idDrink}`}>
                 <h3 className="text-xl font-semibold mb-2 text-blue-600 hover:underline cursor-pointer">{cocktail.strDrink}</h3>
                 <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} className="w-full h-40 object-cover rounded-md" />
